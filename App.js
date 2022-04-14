@@ -40,6 +40,10 @@ export default function App() {
           tabBarActiveTintColor: "#7D1D3F",
           tabBarInactiveTintColor: "#C4547B",
           tabBarLabelPosition: "below-icon",
+          tabBarLabelStyle : {
+            display : 'none'
+          }
+          ,
           tabBarStyle: [
     {
       display: "flex",
