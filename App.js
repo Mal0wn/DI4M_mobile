@@ -4,13 +4,14 @@ import { StyleSheet, Text, View, SafeAreaContext } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
+import Icon from 'react-native-vector-icons/FontAwesome';
 
 
 //import { createNativeStackNavigator} from '@react-navigation/native-stack';
 import  Login  from './screens/LoginScreen';
 import  Home  from './screens/HomeScreen';
 import  Messages  from './screens/MessagesScreen';
-import  FavoritesScreen  from './screens/FavoritesScreen';
+import  Favorites  from './screens/FavoritesScreen';
 import Profile from './screens/ProfileScreen';
 import  AddMissions  from './screens/AddMissionsScreen';
 
@@ -25,10 +26,14 @@ export default function App() {
             if (route.name === 'Home') {
               iconName = 'home'
             } else if (route.name === 'Messages') {
-              iconName = 'message'
+              iconName = "comments"
             } else if (route.name === 'Profile') {
               iconName = 'user-circle'
-            } 
+            } else if (route.name === 'Add') {
+              iconName = 'pencil'
+            } else if (route.name === 'Favorites') {
+              iconName = 'heart'
+            }
 
             return <FontAwesome name={iconName} size={size} color={color} />;
           },
@@ -47,30 +52,20 @@ export default function App() {
         
       >
       <Tab.Screen name="Home" component={Home} />
-      <Tab.Screen name="Messages" component={Messages} />
       <Tab.Screen name="Profile" component={Profile} />
+      <Tab.Screen name="Add" component={AddMissions} />
+      <Tab.Screen name="Messages" component={Messages} />
+      <Tab.Screen name="Favorites" component={Favorites} />
+      
       </Tab.Navigator>
     </NavigationContainer>
   );
 }
 
-function ProfileScreen() {
-  return (
-    <ProfileScreen/>
-  );  
-}
 
-function HomeScreen() {
-  return (
-    <HomeScreen/>
-  );  
-}
+const msgIc = <Icon name="message"/>
 
-function MessagesScreen() {
-  return (
-    <MessagesScreen/>
-  );  
-}
+
 
 const styles = StyleSheet.create({
   container: {
