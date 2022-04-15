@@ -53,64 +53,11 @@ const styles = StyleSheet.create({
 });
 
 
+/**
+Pour mettre en place un button dans un screen : 
 
-/*import React from "react";
-import { Button , TouchableHighlight , Text, StyleSheet } from 'react-native';
-import Pressable from "react-native/Libraries/Components/Pressable/Pressable";
+buttonValue : string 
+size : string ( small || medium || large)
+buttonColor : string ( blue || red)
 
-export default function UIButton(props) {
-  const { buttonValue , size , buttonColor } = props;
-
-function button(buttonColor) {
-		
-		if (buttonColor === 'red') {
-			console.log('bt red')
-			return styles.buttonRed;
-		} else {
-			console.log("bt blue")
-			return styles.buttonBlue;
-		}
-	}
-	return (
-
-	<Pressable style={[button(buttonColor), styles[size]]} >
-	
-		<Text style={styles.text}> { buttonValue } </Text>
-	
-	</Pressable>
-
-
-	)
-  
-}
-
-
-const styles = StyleSheet.create({
-		buttonRed : {
-		backgroundColor : 'red',
-		width: '100%',
-		borderRadius : 60
-		},
-		buttonBlue : {
-		backgroundColor : 'black',
-		width: '100%',
-		borderRadius : 60
-		},
-		text : {
-			size : 12,
-			color : 'white'
-		},
-		small : {
-			width : 24
-		},
-		medium : {
-			width : 50
-		},
-		large : {
-			width : 70
-		}
-
-
-	}) 
-
-	*/
+ */
