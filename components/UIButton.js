@@ -1,6 +1,7 @@
 import React from 'react';
 import { Text, StyleSheet, Pressable } from 'react-native';
 import { Dimensions } from 'react-native';
+import { TouchableOpacity } from 'react-native-web';
 
 
 export default function UIButton(props) {
@@ -21,8 +22,11 @@ function button(buttonColor) {
 
 
   return (
+  
     <Pressable style={[button(buttonColor) , styles[size]]} >
+	<TouchableOpacity>
       <Text style={styles.text}>{buttonValue}</Text>
+	  </TouchableOpacity>
     </Pressable>
   );
 }
