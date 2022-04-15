@@ -20,7 +20,6 @@ function button(buttonColor) {
 	}
 	
 
-
   return (
   
     <Pressable 
