@@ -68,4 +68,10 @@ buttonValue : string = 'text du button'
 size : string ( extrasmall || small || medium || large)
 buttonColor : string ( blue || red)
 
+ex : 
+
+
+<UIButton size= 'small' buttonColor='blue' buttonValue='Se connecter'/>
+
+
  */
