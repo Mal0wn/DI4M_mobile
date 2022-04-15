@@ -18,12 +18,14 @@ function button(buttonColor) {
 			return styles.buttonBlue;
 		}
 	}
-
+	
 
 
   return (
   
-    <Pressable style={[button(buttonColor) , styles[size]]} >
+    <Pressable 
+		style={[button(buttonColor) , styles[size]]}  
+		onPress={console.log("Button ")} >
 	<TouchableOpacity>
       <Text style={styles.text}>{buttonValue}</Text>
 	  </TouchableOpacity>
