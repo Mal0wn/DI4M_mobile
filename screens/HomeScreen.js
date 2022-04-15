@@ -6,7 +6,7 @@ const HomeScreen = () => {
 console.log(UIButton)
 	return ( 
 		<View style={styles.container}>
-			<UIButton size= 'large' buttonColor='blue' buttonValue='Signaler'   />
+			<UIButton size= 'extrasmall' buttonColor='blue' buttonValue='Signaler'   />
 			
 		</View>
 	)

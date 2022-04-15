@@ -1,7 +1,10 @@
 import React from 'react';
 import { Text, StyleSheet, Pressable } from 'react-native';
+import { Dimensions } from 'react-native';
+
 
 export default function UIButton(props) {
+  const screen = Dimensions.get("screen");
   const { buttonColor, buttonValue, size } = props;
 
 function button(buttonColor) {
@@ -39,16 +42,21 @@ const styles = StyleSheet.create({
 		},
 		text : {
 			size : 12,
-			color : 'white'
+			color : 'white',
+			textAlign: 'center',
+			
+		},
+		extrasmall : {
+			width : screen.width / 4
 		},
 		small : {
-			width : 24
+			width : screen.width / 2.5
 		},
 		medium : {
-			width : 50
+			width : screen.width / 1.4
 		},
 		large : {
-			width : 70
+			width : screen.width / 1.2
 		},
 });
 
@@ -57,7 +65,7 @@ const styles = StyleSheet.create({
 Pour mettre en place un button dans un screen : 
 
 buttonValue : string = 'text du button'
-size : string ( small || medium || large)
+size : string ( extrasmall || small || medium || large)
 buttonColor : string ( blue || red)
 
  */
