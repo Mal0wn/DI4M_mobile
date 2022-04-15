@@ -1,12 +1,14 @@
 import { React } from 'react'; 
 import { View , Text , StyleSheet } from 'react-native'
 import UIButton from '../components/UIButton'
+import RatingStar from '../components/UIRate';
+import UIRate from '../components/UIRate';
 
 const HomeScreen = () => { 
-console.log(UIButton)
+console.log(UIRate)
 	return ( 
 		<View style={styles.container}>
-			<UIButton size= 'small' buttonColor='blue' buttonValue='Se connecter'/>
+			<RatingStar/>
 			
 		</View>
 	)
@@ -22,6 +24,6 @@ const styles = StyleSheet.create ( {
 	}
 
 })
-console.log('UIButton ' + UIButton)
+
 export default HomeScreen;
 
