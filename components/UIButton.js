@@ -56,7 +56,7 @@ const styles = StyleSheet.create({
 /**
 Pour mettre en place un button dans un screen : 
 
-buttonValue : string 
+buttonValue : string = 'text du button'
 size : string ( small || medium || large)
 buttonColor : string ( blue || red)
 
