@@ -1,6 +1,6 @@
 import { React } from 'react'; 
 import { View , Text , StyleSheet } from 'react-native'
-import UIButton from '../components/UIButton'
+import UIButton from '../components/UIButton';
 import RatingStar from '../components/UIRate';
 import UIRate from '../components/UIRate';
 
